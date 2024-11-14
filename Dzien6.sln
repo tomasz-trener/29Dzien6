@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03AplikacjaBazodanowaZawod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04Zawodnicy.Shared", "P04Zawodnicy.Shared\P04Zawodnicy.Shared.csproj", "{F4DF1C74-4141-4C64-BB13-1192660E00B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05KontrolkaDataGridView", "P05KontrolkaDataGridView\P05KontrolkaDataGridView.csproj", "{C23FFA4B-793A-4E2F-A7F0-9404E6DD2C37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F4DF1C74-4141-4C64-BB13-1192660E00B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4DF1C74-4141-4C64-BB13-1192660E00B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4DF1C74-4141-4C64-BB13-1192660E00B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C23FFA4B-793A-4E2F-A7F0-9404E6DD2C37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C23FFA4B-793A-4E2F-A7F0-9404E6DD2C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C23FFA4B-793A-4E2F-A7F0-9404E6DD2C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C23FFA4B-793A-4E2F-A7F0-9404E6DD2C37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

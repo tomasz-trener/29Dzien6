@@ -155,6 +155,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="skrypt.sql" />
     <Content Include="wyglad.png" />
   </ItemGroup>
   <ItemGroup>

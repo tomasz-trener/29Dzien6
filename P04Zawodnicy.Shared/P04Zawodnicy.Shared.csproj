@@ -45,6 +45,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ManagerPogody.cs" />
     <Compile Include="Services\ManagerZawodnikow.cs" />
+    <Compile Include="Services\ManagerZawodnikowLocal.cs" />
+    <Compile Include="Tools\PolaczenieZBaza.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

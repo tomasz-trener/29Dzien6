@@ -56,10 +56,6 @@
     <Reference Include="Microsoft.Extensions.Primitives, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Primitives.6.0.0\lib\net461\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
-    <Reference Include="P04Zawodnicy.Shared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Dzien5\P04Zawodnicy.Shared\bin\Debug\P04Zawodnicy.Shared.dll</HintPath>
-    </Reference>
     <Reference Include="PdfSharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
       <HintPath>..\packages\PDFsharp.6.1.1\lib\netstandard2.0\PdfSharp.dll</HintPath>
     </Reference>
@@ -160,6 +156,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="wyglad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\P04Zawodnicy.Shared\P04Zawodnicy.Shared.csproj">
+      <Project>{f4df1c74-4141-4c64-bb13-1192660e00b4}</Project>
+      <Name>P04Zawodnicy.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />

@@ -79,7 +79,7 @@ namespace P03AplikacjaBazodanowaZawodnicy
             if(trybOkienka == TrybOkienka.Edycja)
             {
                 zczytajDaneZkontrolek();
-                mz.Zapisz();
+                mz.Edytuj(wyswietlanyZawodnik);
                 this.Close();
                 frmStartowy.Odswiez();
             }
@@ -87,7 +87,7 @@ namespace P03AplikacjaBazodanowaZawodnicy
             {
                 zczytajDaneZkontrolek();
                 mz.Dodaj(wyswietlanyZawodnik);
-                mz.Zapisz();
+              //  mz.Zapisz();
                 this.Close();
                 frmStartowy.Odswiez();
             }
@@ -113,7 +113,7 @@ namespace P03AplikacjaBazodanowaZawodnicy
             {
                 mz.Usun(wyswietlanyZawodnik.Id_zawodnika);
                 this.Close();
-                mz.Zapisz();
+              //  mz.Zapisz();
                 frmStartowy.Odswiez();
 
             }

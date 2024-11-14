@@ -41,10 +41,10 @@ namespace P04Zawodnicy.Shared.Services
                     z.DataUrodzenia = (DateTime)w[5];
 
                 if (w[6] != DBNull.Value)
-                    z.Waga = (int)w[6];
+                    z.Wzrost = (int)w[6];
 
                 if (w[7] != DBNull.Value)
-                    z.Wzrost = (int)w[7];
+                    z.Waga = (int)w[7];
 
                 zawodnicy.Add(z);
             }
@@ -115,3 +115,9 @@ namespace P04Zawodnicy.Shared.Services
         }
     }
 }
+
+// komunikacja z bazą danych moze przebiegać na 3 sposoby; 
+
+//1) Polecenia SQL 
+//2) procedury wbudowane 
+//3) ORM (object-relation-mapping)

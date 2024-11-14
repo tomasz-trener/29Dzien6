@@ -128,5 +128,12 @@ namespace P03AplikacjaBazodanowaZawodnicy
             lbDane.DisplayMember = null;
             lbDane.DisplayMember = "DynamicznaWlasciwosc";
         }
+
+        private void btnPokazSredniWeik_Click(object sender, EventArgs e)
+        {
+            string wybranyKraj = cbKraje.SelectedItem.ToString();
+            int sredniWiek = mz.PodajSredniWiekZawodnikow(wybranyKraj);
+            MessageBox.Show($"Sredni wiek zawodnikow z kraju {wybranyKraj} wynosi {sredniWiek}");
+        }
     }
 }

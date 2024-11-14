@@ -87,3 +87,8 @@ declare @kraj varchar(3) = 'GER';
 exec SredniWiekZawodnikow @kraj,@sredniWiek output 
 
 select @sredniWiek as SredniWiekZawodnikow
+
+delete zawodnicy where kraj is null
+
+insert into zawodnicy (id_trenera, imie, nazwisko, kraj, data_ur,wzrost,waga) values (null,'adam','nowak','POL','20241114',40,5)
+                                                                                POL','20240101',1,1); drop table zawodnicy --

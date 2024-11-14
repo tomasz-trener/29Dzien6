@@ -146,7 +146,28 @@ namespace P04Zawodnicy.Shared.Services
             }
 
         }
+
+
+        public Trener[] PodajTrenerow()
+        {
+            object[][] dane =
+                pzb.WykonajPolecenieSQL("select id_trenera, imie_t, nazwisko_t from trenerzy");
+
+            Trener[] trenerzy = new Trener[dane.Length];
+            for (int i = 0; i < dane.Length; i++)
+            {
+                trenerzy[i] = new Trener()
+                {
+                    Id = (int)dane[i][0],
+                    Imie = (string)dane[i][1],
+                    Nazwisko = (string)dane[i][2]
+                };
+            }
+            return trenerzy;
+        }
     }
+
+
 }
 
 // komunikacja z bazą danych moze przebiegać na 3 sposoby; 

@@ -39,6 +39,13 @@ namespace P03AplikacjaBazodanowaZawodnicy
             {
                 DataUrodzenia = DateTime.Now
             };
+
+            var trenerzy = mz.PodajTrenerow();
+            cbTrenerzy.DataSource = trenerzy;
+            cbTrenerzy.DisplayMember = "PelnaNazwa";
+            cbTrenerzy.ValueMember = "Id";
+          
+
         }
         public FrmSzczegoly(Zawodnik zawodnik, ManagerZawodnikow mz, FrmStartowy frmStartowy, TrybOkienka trybOkienka ) : this(mz, frmStartowy)
         {
@@ -71,6 +78,9 @@ namespace P03AplikacjaBazodanowaZawodnicy
                 btnZapisz.Visible = false;
                 btnUsun.Visible = false;
             }
+
+            if (wyswietlanyZawodnik != null)
+                cbTrenerzy.SelectedValue = wyswietlanyZawodnik.Id_trenera;
         }
 
 
@@ -102,6 +112,7 @@ namespace P03AplikacjaBazodanowaZawodnicy
             wyswietlanyZawodnik.DataUrodzenia = dtpDataUr.Value;
             wyswietlanyZawodnik.Waga = Convert.ToInt32(numWaga.Value);
             wyswietlanyZawodnik.Wzrost = Convert.ToInt32(numWzrost.Value);
+            wyswietlanyZawodnik.Id_trenera = (int)cbTrenerzy.SelectedValue;
         }
 
         private void btnUsun_Click(object sender, EventArgs e)

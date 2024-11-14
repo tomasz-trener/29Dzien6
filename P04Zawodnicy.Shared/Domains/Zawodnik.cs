@@ -12,7 +12,7 @@ namespace P04Zawodnicy.Shared.Domains
 
         public static string[] WybraneKolumny { get; set; }
         public int Id_zawodnika { get; set; }
-        public int Id_trenera { get; set; }
+        public int? Id_trenera { get; set; }
         public string Imie { get; set; }
         public string Nazwisko { get; set; }
         public string Kraj { get; set; }

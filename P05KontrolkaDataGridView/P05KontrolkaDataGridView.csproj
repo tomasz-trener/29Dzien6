@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\P04Zawodnicy.Shared\P04Zawodnicy.Shared.csproj">
+      <Project>{f4df1c74-4141-4c64-bb13-1192660e00b4}</Project>
+      <Name>P04Zawodnicy.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

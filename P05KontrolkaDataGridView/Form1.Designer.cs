@@ -85,6 +85,7 @@
             this.btnWyslij.TabIndex = 5;
             this.btnWyslij.Text = "Wyślij";
             this.btnWyslij.UseVisualStyleBackColor = true;
+            this.btnWyslij.Click += new System.EventHandler(this.btnWyslij_Click);
             // 
             // Form1
             // 

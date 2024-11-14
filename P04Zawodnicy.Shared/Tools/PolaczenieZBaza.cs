@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace P04Zawodnicy.Shared.Tools
 {
-    internal class PolaczenieZBaza
+    public class PolaczenieZBaza
     {
         private readonly string connectionString;
 

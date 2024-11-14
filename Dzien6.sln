@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01AplikacjaBazodanowa", "P01AplikacjaBazodanowa\P01AplikacjaBazodanowa.csproj", "{8A138E9A-DFE6-4E61-BCBA-210562FA5879}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02PolaczenieZBaza", "P02PolaczenieZBaza\P02PolaczenieZBaza.csproj", "{C71C057A-1E4F-4300-9467-16D8CB33F65B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8A138E9A-DFE6-4E61-BCBA-210562FA5879}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A138E9A-DFE6-4E61-BCBA-210562FA5879}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A138E9A-DFE6-4E61-BCBA-210562FA5879}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C71C057A-1E4F-4300-9467-16D8CB33F65B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C71C057A-1E4F-4300-9467-16D8CB33F65B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C71C057A-1E4F-4300-9467-16D8CB33F65B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C71C057A-1E4F-4300-9467-16D8CB33F65B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

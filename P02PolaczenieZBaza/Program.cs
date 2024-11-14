@@ -12,9 +12,15 @@ namespace P02PolaczenieZBaza
         {
             PolaczenieZBaza pzb = new PolaczenieZBaza();
             object[][] wynik = pzb.WykonajPolecenieSQL("select * from zawodnicy");
-
+           
             foreach (object[] wiersz in wynik)
                 Console.WriteLine(string.Join(" ",wiersz));
+
+
+            (string[] naglowki, object[][] wiersze) = pzb.WykonajPolecenieSQLPlusNaglowki("select * from zawodnicy");
+            foreach(string n in naglowki)
+                Console.WriteLine(n);
+
 
 
             Console.ReadLine();

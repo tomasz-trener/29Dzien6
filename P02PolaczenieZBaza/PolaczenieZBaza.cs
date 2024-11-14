@@ -57,5 +57,39 @@ namespace P02PolaczenieZBaza
             return listaWierszy.ToArray();
         }
 
+        public (string[] naglowki , object[][] wiersze) WykonajPolecenieSQLPlusNaglowki(string sql)
+        {
+            SqlConnection connection; // nazwiazywanie polaczenia z baza 
+            SqlCommand command; // przechowwanie polecen sql 
+            SqlDataReader sqlDataReader; // czytanie wynikow z bazy 
+
+
+            connection = new SqlConnection(connectionString);
+            command = new SqlCommand(sql, connection);
+            connection.Open();
+            sqlDataReader = command.ExecuteReader();
+
+
+            int liczbaKolumn = sqlDataReader.FieldCount;
+            List<object[]> listaWierszy = new List<object[]>();
+
+            string[] naglowki = new string[liczbaKolumn];
+            for (int i = 0; i < liczbaKolumn; i++)
+                naglowki[i] = sqlDataReader.GetName(i);
+
+
+            while (sqlDataReader.Read())
+            {
+                object[] komorki = new object[liczbaKolumn];
+                for (int i = 0; i < liczbaKolumn; i++)
+                    komorki[i] = sqlDataReader.GetValue(i);
+
+                listaWierszy.Add(komorki);
+            }
+
+            connection.Close();
+            return (naglowki,listaWierszy.ToArray());
+        }
+
     }
 }

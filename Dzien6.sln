@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01AplikacjaBazodanowa", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02PolaczenieZBaza", "P02PolaczenieZBaza\P02PolaczenieZBaza.csproj", "{C71C057A-1E4F-4300-9467-16D8CB33F65B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03AplikacjaBazodanowaZawodnicy", "P03AplikacjaBazodanowaZawodnicy\P03AplikacjaBazodanowaZawodnicy.csproj", "{DADF11AB-933A-48DA-9335-D8C24BC1FE01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04Zawodnicy.Shared", "P04Zawodnicy.Shared\P04Zawodnicy.Shared.csproj", "{F4DF1C74-4141-4C64-BB13-1192660E00B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{C71C057A-1E4F-4300-9467-16D8CB33F65B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C71C057A-1E4F-4300-9467-16D8CB33F65B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C71C057A-1E4F-4300-9467-16D8CB33F65B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DADF11AB-933A-48DA-9335-D8C24BC1FE01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DADF11AB-933A-48DA-9335-D8C24BC1FE01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DADF11AB-933A-48DA-9335-D8C24BC1FE01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DADF11AB-933A-48DA-9335-D8C24BC1FE01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4DF1C74-4141-4C64-BB13-1192660E00B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4DF1C74-4141-4C64-BB13-1192660E00B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4DF1C74-4141-4C64-BB13-1192660E00B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4DF1C74-4141-4C64-BB13-1192660E00B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

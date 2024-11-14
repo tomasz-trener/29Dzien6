@@ -1,6 +1,7 @@
 Cel zadania: Celem zadania jest rozbudowa istniej¹cej aplikacji zarz¹dzaj¹cej zawodnikami o mo¿liwoœæ przypisywania im trenerów. 
 Funkcjonalnoœæ ta bêdzie polega³a na dodaniu do formularza szczegó³ów zawodnika listy rozwijanej, 
-z której mo¿na bêdzie wybraæ trenera (sk³adaj¹cego siê z imienia i nazwiska) trenuj¹cego danego zawodnika. U¿ytkownik powinien mieæ mo¿liwoœæ zobaczenia aktualnie przypisanego trenera oraz zmiany go na innego z listy dostêpnych trenerów.
+z której mo¿na bêdzie wybraæ trenera (sk³adaj¹cego siê z imienia i nazwiska) trenuj¹cego danego zawodnika. 
+U¿ytkownik powinien mieæ mo¿liwoœæ zobaczenia aktualnie przypisanego trenera oraz zmiany go na innego z listy dostêpnych trenerów.
 
 Wymagania:
 Modyfikacja bazy danych: Upewnij siê, ¿e w bazie danych istnieje tabela trenerzy zawieraj¹ca przynajmniej kolumny id_trenera, imie, nazwisko. Tabela zawodnicy musi zawieraæ kolumnê id_trenera jako klucz obcy referencyjny do tabeli trenerzy.
